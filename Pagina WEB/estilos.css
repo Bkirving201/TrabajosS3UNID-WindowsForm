@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
+
+:root{
+
+    --background: linear-gradient(135deg, #667eea7e 0%, #764ba298 100%);
+    --Colorprimario: #667eea;
+    --Colorsecundario: #764ba2;
+
+}
+
+body{
+    font-family: 'Playfair Display', serif;
+}
+
+
+.FONDO{
+    height: 100vh;
+    width: 100%;
+    height: 600px;
+    background-image: var(--background), url(./img/miss-zhang-NF1B6yyuwMQ-unsplash.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    }
+
+
+.FONDO .Informacion{
+    color: white;
+    height: calc(100hv - 70px);
+    align-items: center;
+    margin: 15px 50px;
+    font-weight: 300;
+}
+
+.FONDO .infotitu{
+    display: flex;
+    font-size: 3.2rem;
+    align-items: center;
+    justify-items: center;
+}
+
+.FONDO .infosubtitu{
+    font-size: 1.5rem;
+    font-weight: 300;
+    margin: 15px 0;
+}
+
+    
+.container{
+    padding: 80px 0;
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.TittleText{
+    color:var(--Colorprimario);
+    font-size: 2.5rem;
+    margin-bottom: 35px;
+    
+}
+
+.wave{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+}
+
+
+.container .descripcion {
+
+padding: 0 auto;
+font-size: 1.3rem;
+}
+
+.container .subtitilos{
+    
+    font-size: 1.3rem;
+}
+
+.cursos{
+    padding: 60px 0;
+    min-height: 400px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 80px;
+    justify-items: center;
+    align-items: center;
+}
+
+.cursos .imgderecha{
+    max-width: 70%;
+    text-align: center;
+}
+
+.cursos .imgizquierda1{
+    max-width: 70%;
+    text-align: center;
+    grid-column: 1;
+    grid-row: 2 ;
+}
+
+.cursos .imgizquierda2{
+    max-width: 70%;
+    text-align: center;
+    grid-column: 1;
+    grid-row: 4 ;
+}
+
+.cursos .descripcion{
+
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.boton{
+    font-size: 1.5rem;
+    display: inline-block;
+    margin-top: 30px;
+    background: var(--Colorprimario);
+    color: white;
+    text-decoration: none;
+    padding: 20px 40px;
+    border-radius: 40px;
+}
+
+
+.GaleriaIMG{
+
+    display: grid;
+    height: 550px;
+    grid-template-areas: 
+    "img1 img2 img3";
+
+    gap: 10px;
+
+}
+
+.imggalerias{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.imagenesgaleria{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+.Mensaje{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;   
+    background: var(--background); 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transform: translateX(100%);
+    cursor: pointer;
+    transition: transform .3s ease-in-out;
+}
+
+.imggalerias:hover .Mensaje{
+    transform: translateX(0%);
+}
+
+.Mensaje .TittleText{
+    color: white;
+}
+
+.logo{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    align-items: center;
+    text-align: center;
+    object-fit: cover;
+}
